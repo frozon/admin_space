@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
   gem.homepage      = "http://github.com/frozon/admin_space"
 
   #gem.files         = `git ls-files`.split($/)
-  gem.files         = Dir.glob('{app,config,lib}/**/*') + %w(Gemfile LICENSE README.md Rakefile)
+  gem.files         = Dir.glob('{app,config,lib}/**/*') + %w(Gemfile LICENSE.txt README.md Rakefile)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
