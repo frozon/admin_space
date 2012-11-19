@@ -7,12 +7,12 @@ AdminSpace handle admin namespace, controllers, views in your application
 Using bundler:
 In your Gemfile
 ```
-  gem 'admin_space'
+  gem 'AdminSpace'
 ```
 
 Or manually :
 ```
-  gem install admin_space
+  gem install AdminSpace
 ```
 
 ## Usage
