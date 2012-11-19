@@ -1,11 +1,10 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'admin_space/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "admin_space"
-  gem.version       = AdminSpace::VERSION
+  gem.name          = "AdminSpace"
+  gem.version       = '0.0.1'
   gem.authors       = ["Thomas Lauro"]
   gem.email         = ["thomas@lauro.fr"]
   gem.description   = %q{AdminSpace handle admin namespace for you}
