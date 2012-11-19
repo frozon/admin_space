@@ -1,0 +1,12 @@
+%h1= @resource_name.camelize
+%table
+  %thead
+    %tr
+      - (@resource_class.accessible_attributes - [""]).each do |attr|
+        %th= attr
+  %tbody
+    - @resources.each do |resource|
+      %tr
+        - (@resource_class.accessible_attributes - [""]).each do |attr|
+          %td= link_to resource.send(attr), [:admin, resource]
+= link_to 'New', [:new, :admin, @resource_name]

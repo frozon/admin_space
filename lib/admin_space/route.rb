@@ -5,8 +5,6 @@ module ActionDispatch::Routing
         with_options controller: :base do |admin|
           yield admin
         end
-        # match ':type/:id', controller: :base, action: :show, constraints: { :id => /\d/ }
-        # match ':type/(:action/(:id(.:format)))', controller: :base
 
         # List all model and build routes
         models = []

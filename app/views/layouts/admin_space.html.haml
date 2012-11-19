@@ -1,0 +1,10 @@
+%html
+  %head
+  %body
+    #menu
+      %ul
+        - Dir.glob( 'app/models/*' ).each do |model|
+          - model_name = File.basename(model).gsub( /^(.+).rb/, '\1').pluralize
+          %li= link_to model_name, [:admin, model_name]
+    .container
+      = yield

@@ -1,4 +1,4 @@
-require 'admin_space/route.rb'
+require 'admin_space/route'
 require 'rails/engine'
 require 'admin_space/version'
 

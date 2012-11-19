@@ -1,9 +1,0 @@
-<dl style="clear: both; overflow: hidden;">
-<% (@resource_class.accessible_attributes - [""]).each do |attr| %>
-  <dt style="clear: both; float: left; width: 100px;"><label><%= attr %></label></dt>
-  <dd style="float: left">
-    <%= f.text_field attr %>
-  </dd>
-<% end %>
-</dl>
-<input type="submit" value="Add"/>
