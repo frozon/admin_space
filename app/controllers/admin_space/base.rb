@@ -19,7 +19,7 @@ module AdminSpace
       end
 
       def update
-        @resource.update_attributes params[@model]
+        @resource.update_attributes params[resource_class.to_s.downcase]
         redirect_to [:admin, @resource]
       end
 

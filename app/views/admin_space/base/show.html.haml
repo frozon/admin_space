@@ -1,0 +1,8 @@
+%h1= @resource_name.camelize
+%dl
+  - (@resource_class.accessible_attributes - [""]).each do |attr|
+    %dt= attr
+    %dd= eval("@resource.#{attr}")
+.actions
+  = link_to 'Edit', [:edit, :admin, @resource]
+  = link_to 'Delete', [:admin, @resource], method: :delete, confirm: 'Are you sure?'

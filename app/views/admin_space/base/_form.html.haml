@@ -1,7 +1,6 @@
-%dl{style: "clear: both; overflow: hidden;"}
-- (@resource_class.accessible_attributes - [""]).each do |attr|
-  %dt{style: "clear: both; float: left; width: 100px;"}
-    %label= attr
-  %dd{style: "float: left"}
-    = f.text_field attr
-= f.submit "Add"
+%dl
+  - (@resource_class.accessible_attributes - [""]).each do |attr|
+    %dt
+      %label= attr
+    %dd
+      = f.text_field attr

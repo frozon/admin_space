@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |gem|
   gem.name          = "AdminSpace"
-  gem.version       = '0.0.1'
+  gem.version       = '0.0.2'
   gem.authors       = ["Thomas Lauro"]
   gem.email         = ["thomas@lauro.fr"]
   gem.description   = %q{AdminSpace handle admin namespace for you}
@@ -17,4 +17,5 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
 
   gem.add_dependency 'haml'
+  gem.add_dependency 'sass-rails'
 end

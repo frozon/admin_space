@@ -1,10 +1,11 @@
 %html
   %head
+    = stylesheet_link_tag 'admin_space'
   %body
     #menu
       %ul
         - Dir.glob( 'app/models/*' ).each do |model|
           - model_name = File.basename(model).gsub( /^(.+).rb/, '\1').pluralize
-          %li= link_to model_name, [:admin, model_name]
+          %li{class: model_name.singularize == @resource_name ? 'active' : ''}= link_to model_name, [:admin, model_name]
     .container
       = yield
